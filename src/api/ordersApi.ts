@@ -2,12 +2,11 @@ import axios from "axios";
 import type { Order } from "../features/orders/types/order";
 
 const api = axios.create({
-  baseURL: "http://localhost:3000",
-  headers: {
-    "Content-Type": "application/json",
-  },
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:3000",
+  headers: { "Content-Type": "application/json" },
   timeout: 5000,
 });
+
 
 // Obtención de todos los pedidos
 export async function getOrders(): Promise<Order[]> {
