@@ -177,3 +177,7 @@ npm test          # correr tests
 Puedes levantar el frontend y el mock API en un solo paso usando Docker Compose:
 
 docker-compose up --build
+
+##  Demo en Producción
+- Frontend (Vercel): [kds-frontend.vercel.app]
+- Mock API (Render):[https://mock-api-orders-1.onrender.com]
