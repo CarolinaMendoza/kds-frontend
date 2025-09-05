@@ -1,0 +1,83 @@
+:root {
+  --brand-primary: #1d70c2;      
+  --brand-accent: #2e7d32;   
+  --surface-radius: 24px;
+}
+
+.hero {
+   position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:  url("../../../assets/kitchen-background.jpg") center/cover no-repeat;
+  filter: blur(5px);
+  transform: scale(1.1);
+  z-index: 0;
+}
+
+.card {
+  position: relative;
+  z-index: 2;
+
+  border-radius: 20px!important;
+  padding: 32px;
+
+  /*blur */
+  background: rgba(255, 255, 255, 0.15)!important;
+  backdrop-filter: blur(12px) !important;
+
+  /* Sombra */
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25)!important;
+
+  /* Borde con efecto */
+  border: 1px solid rgba(255, 255, 255, 0.25)!important;
+
+  /* Animación */
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  margin: 0 auto 8px;
+  display: grid;
+  place-items: center;
+  color: var(--brand-accent);
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--brand-primary) 20%, transparent),
+    color-mix(in srgb, var(--brand-accent) 20%, transparent)
+  );
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  letter-spacing: -0.2px;
+}
+
+.underline {
+  height: 3px;
+  margin: 4px auto 0;
+  background: linear-gradient(90deg, var(--brand-primary), var(--brand-accent));
+  border-radius: 999px;
+}

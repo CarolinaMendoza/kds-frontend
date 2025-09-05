@@ -1,0 +1,48 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+ display: flex;
+ align-items: center;
+  justify-content: center;
+   min-height: 100vh; 
+
+  /*blur y oscurecimiento */
+  background:
+    radial-gradient(1100px 400px at 10% -10%, rgba(25,118,210,0.18), transparent 60%),
+    radial-gradient(1000px 360px at 100% 0%, rgba(46,125,50,0.18), transparent 55%),
+    rgba(0,0,0,0.55);
+  backdrop-filter: blur(40px);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Spinner */
+.spinner {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-top: 6px solid transparent;
+
+  background: conic-gradient(
+    from 0deg,
+    #1976d2,
+    #42a5f5,
+    #66bb6a,
+    #2e7d32,
+    #1976d2
+  );
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 6px), #000 0);
+  mask: radial-gradient(farthest-side, #0000 calc(100% - 6px), #000 0);
+
+  animation: kds-spin 1.2s linear infinite;
+}
+
+@keyframes kds-spin {
+  to { transform: rotate(1turn); }
+}

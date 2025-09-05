@@ -1,0 +1,170 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "cliente": "Juan Pérez",
+      "tipo": "Delivery",
+      "estado": "Pendiente",
+      "hora": "2025-09-03T10:30:00Z",
+      "productos": [
+        {
+          "nombre": "Pizza Pepperoni",
+          "cantidad": 2
+        },
+        {
+          "nombre": "Coca Cola 500ml",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "cliente": "María López",
+      "tipo": "Mesa",
+      "estado": "Listo",
+      "hora": "2025-09-03T11:00:00Z",
+      "productos": [
+        {
+          "nombre": "Ensalada César",
+          "cantidad": 1
+        },
+        {
+          "nombre": "Agua Mineral",
+          "cantidad": 2
+        }
+      ]
+    },
+    {
+      "id":3,
+      "cliente": "Carlos García",
+      "tipo": "Para llevar",
+      "estado": "Listo",
+      "hora": "2025-09-03T11:15:00Z",
+      "productos": [
+        {
+          "nombre": "Hamburguesa Doble",
+          "cantidad": 1
+        },
+        {
+          "nombre": "Papas Fritas",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id":4,
+      "cliente": "Ana Torres",
+      "tipo": "Delivery",
+      "estado": "En preparación",
+      "hora": "2025-09-03T11:45:00Z",
+      "productos": [
+        {
+          "nombre": "Sushi Roll California",
+          "cantidad": 3
+        }
+      ]
+    },
+    {
+      "id":5,
+      "cliente": "Luis Fernández",
+      "tipo": "Mesa",
+      "estado": "En preparación",
+      "hora": "2025-09-03T12:00:00Z",
+      "productos": [
+        {
+          "nombre": "Lasagna",
+          "cantidad": 1
+        },
+        {
+          "nombre": "Jugo de Naranja",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id":6,
+      "cliente": "Carmen Rodríguez",
+      "tipo": "Para llevar",
+      "estado": "Listo",
+      "hora": "2025-09-03T12:10:00Z",
+      "productos": [
+        {
+          "nombre": "Pizza Margarita",
+          "cantidad": 1
+        },
+        {
+          "nombre": "Sprite 500ml",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "cliente": "Miguel Herrera",
+      "tipo": "Delivery",
+      "estado": "Listo",
+      "hora": "2025-09-03T12:30:00Z",
+      "productos": [
+        {
+          "nombre": "Pollo a la Brasa",
+          "cantidad": 1
+        },
+        {
+          "nombre": "Inca Kola 1L",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id":8,
+      "cliente": "Sofía Ramírez",
+      "tipo": "Mesa",
+      "estado": "En preparación",
+      "hora": "2025-09-03T12:45:00Z",
+      "productos": [
+        {
+          "nombre": "Tacos de Carne",
+          "cantidad": 2
+        },
+        {
+          "nombre": "Agua con Gas",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "cliente": "Pedro Sánchez",
+      "tipo": "Para llevar",
+      "estado": "Pendiente",
+      "hora": "2025-09-03T13:00:00Z",
+      "productos": [
+        {
+          "nombre": "Sándwich de Pollo",
+          "cantidad": 1
+        },
+        {
+          "nombre": "Café Americano",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "cliente": "Laura Castro",
+      "tipo": "Delivery",
+      "estado": "Pendiente",
+      "hora": "2025-09-03T13:15:00Z",
+      "productos": [
+        {
+          "nombre": "Pizza Vegetariana",
+          "cantidad": 1
+        },
+        {
+          "nombre": "Té Helado",
+          "cantidad": 1
+        }
+      ]
+    }
+  ]
+}

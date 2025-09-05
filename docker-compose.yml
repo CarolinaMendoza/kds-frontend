@@ -1,0 +1,27 @@
+
+
+services:
+  api:
+  image: node:18
+  working_dir: /app
+  volumes:
+    - ./db.json:/app/db.json   # montamos SOLO db.json
+  command: npx json-server --watch /app/db.json --port 3000 --host 0.0.0.0
+  ports:
+    - "3000:3000"
+    # Copiamos db.json inicial desde tu proyecto al volumen
+
+  frontend:
+    build: .
+    working_dir: /app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev
+    ports:
+      - "5173:5173"
+    depends_on:
+      - api
+
+volumes:
+  db_data:

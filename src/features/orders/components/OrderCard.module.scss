@@ -1,0 +1,33 @@
+$radius: 18px;
+
+.card {
+  height: 100%;        
+  display: flex;
+  flex-direction: column;
+  border-radius: $radius;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .375rem;
+}
+
+.products {
+  padding-top: 0;
+
+  li {
+    padding-left: 0;
+  }
+}
+
+.final {
+  opacity: .9;
+  filter: saturate(.9);
+}
